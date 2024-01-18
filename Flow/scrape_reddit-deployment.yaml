@@ -1,0 +1,42 @@
+###
+### A complete description of a Prefect Deployment for flow 'scrape-reddit'
+###
+name: posts_scraper
+description: null
+version: 72aea25f955277d47e8544e0cd9f8b54
+# The work queue that will handle this deployment's runs
+work_queue_name: default
+work_pool_name: null
+tags: []
+parameters: {}
+schedule: null
+is_schedule_active: null
+infra_overrides: {}
+infrastructure:
+  type: process
+  env: {}
+  labels: {}
+  name: null
+  command: null
+  stream_output: true
+  working_dir: null
+  block_type_slug: process
+  _block_type_slug: process
+
+###
+### DO NOT EDIT BELOW THIS LINE
+###
+flow_name: scrape-reddit
+manifest_path: null
+storage: null
+path: /home/huythai/project3/Flow
+entrypoint: post_scraper.py:scrape_reddit
+parameter_openapi_schema:
+  title: Parameters
+  type: object
+  properties: {}
+  required: null
+  definitions: null
+timestamp: '2024-01-09T16:00:27.642341+00:00'
+triggers: []
+enforce_parameter_schema: null
